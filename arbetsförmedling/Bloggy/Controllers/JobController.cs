@@ -29,7 +29,7 @@ namespace JobApi.Controllers
 
                 HttpWebRequest request = (HttpWebRequest)WebRequest.Create(apiUrl);
                 request.Method = "GET"; //använder get metod
-                request.Headers.Add("api-key", "dG91Z2VudEBnbWFpbC5jb20"); //egen nyckel för api
+                request.Headers.Add("api-key", "INSERT_API_KEY_HERE"); //egen nyckel för api
 
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
