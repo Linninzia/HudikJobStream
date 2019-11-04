@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jobb i Hudiksvall</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!-- mörkare bakgrund -->
+    <div id="overlay"></div>
+
+    <!-- box för att samla allt innehåll och lättare strukturera upp det -->
+    <div class="content">
+
+        <div class="start">
+
+            <h1>Välkommen till Hudiksvall</h1>
+            <div class="sBtn"><img src="img/search.svg" alt=""></div>
+            <p>Visa aktiva jobbannonser</p>
+
+        </div>
+
+        <div class="startList">
+
+            <div id="view">
+                <h3 id="view-title"></h3>
+                <p id="view-text"></p>
+                <p id="view-place"></p>
+                <p id="view-dateEnd"></p>
+                <p id="view-id"></p>
+                <div class="closeBtn"></div>
+            </div>
+
+            <p id="counter"></p>
+
+            <table>
+                <tr>
+                    <th>Lediga jobb</th>
+                    <th>Sista ansökningsdatum</th>
+                </tr>
+                <tbody id="list"></tbody>
+            </table>
+
+        </div>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+body {
+    position: relative;
+    background-image: url("img/hudiksvall.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#counter{
+    color: rgb(255,255,255);
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); 
+    z-index: 2; 
+    cursor: pointer;
+}
+
+#view {
+    display: none;
+    z-index: 3;
+    background-color: rgb(255,255,255);
+    position: fixed;
+    left: 25%;
+    top: 15%;
+    right: 25%;
+    bottom: 15%;
+    overflow-y: auto;
+    padding: 1em 2em;
+    border-radius: 0.3em;
+}
+
+    #view p {
+        white-space: -moz-pre-wrap; /* Firefox */
+        white-space: -pre-wrap; /* ancient Opera */
+        white-space: -o-pre-wrap; /* newer Opera */
+        white-space: pre-wrap; /* Chrome; W3C standard */
+        word-wrap: break-word; /* IE */
+    }
+
+table {
+    font-family: Arial, sans-serif;
+    border: none;
+    border-collapse: collapse;
+    width:100%;
+}
+
+th {
+    background-color: rgba(255, 106, 0, 0.7);
+    color: white;
+    padding: 1em 1em;
+    text-align: left;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+td {
+    border: none;
+    padding: 0.5em 1em;
+}
+
+tr {
+    background-color: rgba(255,255,255,0.9);
+}
+
+    tr:hover {
+        background-color: rgba(255, 106, 0, 0.9);
+        color: rgb(255,255,255);
+        cursor: pointer;
+    }
+
+.startList{
+    display:none;
+}
+
+.start {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    color: rgb(255,255,255);
+    text-shadow: 2px 1px rgb(0,0,0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -250px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0.3em;
+}
+
+.start h1 {
+    font-size: 300%;
+    text-align: center;
+}
+
+.start p {
+    position:absolute;
+    bottom: 0;
+    left: 1em;
+    font-size: 120%;
+}
+
+.sBtn {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    background-color: rgba(255, 106, 0,0.7);
+    float: left;
+    margin: 0 1em 0 5em;
+    border: 2px solid rgb(255, 106, 0);
+    box-shadow: 3px 3px 10px 5px rgba(0,0,0,0.4);
+}
+
+.sBtn img {
+    width: 100%;
+    height: auto;
+    padding: 9px;
+}
+
+.sBtn:hover, .closeBtn:hover {
+    cursor: pointer;
+    border: 2px solid rgb(255,255,255);
+}
+
+.closeBtn:before {
+    content: 'x';
+    font-size: 200%;
+    font-weight: 300;
+    font-family: Arial, sans-serif;
+    color: rgb(255,255,255);
+    line-height: 0.8;
+    margin: 0 0 0 0.25em;
+}
+
+.closeBtn {
+    z-index: 4;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    background-color: rgba(255, 0, 0,0.7);
+    position: fixed;
+    top: 8%;
+    right: 26%;
+    border: 2px solid rgb(255, 106, 0);
+    
+}
+
+/***************************/
+/* Grid					   */
+/***************************/
+#wrapContainer {
+    min-height: 100%;
+    position: relative;
+}
+
+#contentWrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 28em 0;
+}
+
+.content {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+    .content:after {
+        content: "\0020";
+        display: block;
+        clear: both;
+        visibility: hidden;
+    }
+
+.wrap-col {
+    padding: 0.3em;
+    margin: 0.5em;
+    overflow: hidden;
+}
+
+[class*="col-"] {
+    float: left;
+    width: 100%;
+}
+
+/***************************/
+/* Grid	desktop:		   */
+/***************************/
+@media only screen and (min-width: 1180px) {
+    .col-1-12 {
+        width: 8.33%;
+    }
+
+    .col-2-12 {
+        width: 16.66%;
+    }
+
+    .col-3-12 {
+        width: 25%;
+    }
+
+    .col-4-12 {
+        width: 33.33%;
+    }
+
+    .col-5-12 {
+        width: 41.66%;
+    }
+
+    .col-6-12 {
+        width: 50%;
+    }
+
+    .col-7-12 {
+        width: 58.33%;
+    }
+
+    .col-8-12 {
+        width: 66.66%;
+    }
+
+    .col-9-12 {
+        width: 75%;
+    }
+
+    .col-10-12 {
+        width: 83.33%;
+    }
+
+    .col-11-12 {
+        width: 91.66%;
+    }
+
+    .col-calendar {
+        width: 14.28%;
+    }
+
+    .col-full {
+        width: 100%;
+    }
+
+    .navControl {
+        display: none;
+    }
+}
